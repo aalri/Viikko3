@@ -52,7 +52,7 @@ public class AuthenticationService {
     }
     
     private boolean usernameInvalid(String username){
-        return !usernameLength(username) || usernameContentsInvalid(username) || usernameReserved(username);
+        return usernameLength(username) || usernameContentsInvalid(username) || usernameReserved(username);
     }
     
     private boolean usernameLength(String username){
